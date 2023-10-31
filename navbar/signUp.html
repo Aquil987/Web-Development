@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+         *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        header{
+            background-color: blueviolet;
+            color: azure;
+            /* font-size: 15px; */
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            /* height: 40px; */
+        }
+        
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 50px;
+            }
+        li{
+            list-style-type: none; 
+        }
+        ul > li {
+            cursor: pointer;
+        }
+        ul > li:hover{
+            border-bottom: 2px solid white;
+            color: rgb(226, 43, 101);
+        }
+        
+         #searchbar{
+            border:none;
+            padding: 10px;
+            border-radius: 10px;
+            color: grey;
+            font-size: 13px;
+            outline: none;
+            /* box-shadow: none; */
+        }
+        img {
+            width: 100px;
+            height: 75px;
+            border-radius: 50%;
+        }
+        a:hover{
+            border-bottom: 2px solid white;
+            color: rgb(226, 43, 101);}
+            form{
+            margin: 50px 0 0 200px;
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(59, 159, 104);
+            /* width: 450px; */
+            display: inline-block;
+        }
+        form > input {
+            width: 200px;
+            height: 25px;
+            margin: 10px;
+            outline: none;
+            padding: 10px;
+            border-radius: 3px;
+            border: none;
+            /* box-shadow: none; */
+        }
+        /* input{
+            
+
+        } */
+        button{
+            margin: 10px;
+            background-color: brown;
+            color: aliceblue;
+            font-family: sans-serif;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        img {
+            width: 100px;
+            height: 75px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+         <!-- This is Header Section. -->
+         <header>
+            <nav>
+                <div class="logo">
+                    
+                </div>
+                <ul>
+                    <img src="./img/logo.png" alt="logo">
+                <li id="home">Home</li>
+                <li>Services</li>
+                <li>About Us </li>
+                <a  style="text-decoration: none; color: aliceblue; font-weight: bold;" href="./signUp.html">Log In</a> 
+                
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- making form -->
+     
+        <form action="">
+            <span style="color: aliceblue; font-weight: bold; display: flex; align-items: center; justify-content: center; padding: 10px;">Create an account.</span>
+            <br>
+            <input type="text" placeholder="First Name:"/>
+            <input type="text" placeholder="Surname:"/>
+        </br>
+            <input type="email" placeholder="Enter Email:"/>
+         
+
+            <input type="password" placeholder="Create a password:"/>
+            <br>
+            <!-- <input type="text" placeholder=""/> -->
+            <button>Submit</button>
+        </form>
+    </main>
+</body>
+</html>
