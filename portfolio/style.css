@@ -1,0 +1,53 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#portfolio {
+    background-color: blueviolet;
+    height: 300px;
+    width: 600px;
+    margin: 30px auto;
+    box-shadow: rgba(248, 208, 76, 0.9) 0px 5px 15px 2px;
+    border-radius: 11px;
+    
+
+
+}
+.parent{
+   
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+.text{
+    margin-top: 20px;
+    font-size: 30px;
+    color: aliceblue;
+    /* margin: 15px;
+    padding: 15px; */
+    
+}
+#text > span {
+    font-size: 20px;
+}
+.user_img{
+    margin-top: 20px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.icon_div {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* color: bisque; */
+}
+.icon_div > span > i {
+    color: azure;
+    cursor: pointer;
+}

@@ -5,127 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        *{
-            padding: 0%;
-            margin: 0%;
-            box-sizing: border-box;
-        }
-
-        header{
-            background-color: blueviolet;
-            color: azure;
-            /* font-size: 15px; */
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            /* height: 40px; */
-        }
-        
-        ul{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            height: 50px;
-            }
-        li{
-            list-style-type: none; 
-        }
-        ul > li {
-            cursor: pointer;
-        }
-        ul > li:hover{
-            border-bottom: 2px solid white;
-            color: rgb(240, 230, 41);
-        }
-        
-         #searchbar{
-            border:none;
-            padding: 10px;
-            border-radius: 10px;
-            color: grey;
-            font-size: 13px;
-            outline: none;
-            /* box-shadow: none; */
-        }
-        
-
-        /* margin, padding, border */
-        /* footer styling */
-        /* .footer {
-        
-        } */
-        footer{
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        
-        width: 100%;
-        height: 15%;
-        background-color: rgb(150, 128, 128);
-        color: white;
-        text-align: center;
-        }
-        form{
-            margin: 50px 0 0 200px;
-            /* text-align: center; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-color: rgb(59, 159, 104);
-            /* width: 450px; */
-            display: inline-block;
-        }
-        form > input {
-            width: 200px;
-            height: 25px;
-            margin: 10px;
-            outline: none;
-            padding: 10px;
-            border-radius: 3px;
-            border: none;
-            /* box-shadow: none; */
-        }
-        /* input{
-            
-
-        } */
-        button{
-            margin: 10px;
-            background-color: brown;
-            color: aliceblue;
-            font-family: sans-serif;
-            font-weight: bold;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        img {
-            width: 100px;
-            height: 75px;
-            border-radius: 50%;
-        }
-        #cards {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: auto;
-        padding-left: 80px;
-        padding-right: 80px;
-        gap: 20px;
-        margin-top: 20px; 
-            /* display: flex;
-            justify-content: space-evenly; */
-        }
-        .card{
-            background-color: rgb(236, 99, 197);
-            height: 250px;
-            width: 200px;
-            border-radius: 10px;
-            border: none;
-            margin-top:20px;
-            padding: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <main>
@@ -136,59 +16,112 @@
                     
                 </div>
                 <ul>
-                    <img src="./img/logo.png" alt="logo">
+                    <img id="logo" src="./img/logo.png" alt="logo">
                 <li id="home">Home</li>
                 <li>Services</li>
                 <li>About Us </li>
-                <a  style="text-decoration: none; color: aliceblue; font-weight: bold;" href="./signUp.html">Sign Up</a> 
-                <input id="searchbar" type="search" placeholder="Search anything !">
+                <a  id="signup" href="./signUp.html" target="_blank" > Sign Up </a> 
+
+                <div id="searchbar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="inputbar" type="search" placeholder="Search anything !">
+                </div>
                 </ul>
             </nav>
         </header>
    
         <!-- card -->
+        <section>
+            <img id="nature" src="./img/nature.jpg" alt="nature">
+        </section>
             <div id="cards">
                 <div class="card">
                     <h2>This is Card1.</h2>
                     <!-- <span></span> -->
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis eaque molestias quod ut voluptate.</p>
+                    
+                    <div class="imgdiv">
+                        <img class="card_img" src="./img/blue-villa-beautiful-sea-hotel.jpg" alt="">
+                    </div>
+                    
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis eaque molestias quod ut voluptate.</p> -->
                 </div>
                 <div class="card">
                     <h2>This is Card 2.</h2>
                     <!-- <span></span> -->
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis eaque molestias quod ut voluptate.</p>
+                    <div class="imgdiv">
+                        <img class="card_img" src="./img/blue-villa-beautiful-sea-hotel.jpg" alt="">
+                    </div>
                 </div>
                 <div class="card">
                     <h2>This is Card 3.</h2>
                     <!-- <span></span> -->
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis eaque molestias quod ut voluptate.</p>
+                    <div class="imgdiv">
+                        <img class="card_img" src="./img/blue-villa-beautiful-sea-hotel.jpg" alt="">
+                    </div>
                 </div>
                 <div class="card">
                     <h2>This is Card 4.</h2>
                     <!-- <span></span> -->
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis eaque molestias quod ut voluptate.</p>
+                    <div class="imgdiv">
+                        <img class="card_img" src="./img/blue-villa-beautiful-sea-hotel.jpg" alt="">
+                    </div>
                 </div>
                 <div class="card">
                     <h2>This is Card 5.</h2>
                     <!-- <span></span> -->
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis eaque molestias quod ut voluptate.</p>
+                    <div class="imgdiv">
+                        <img class="card_img" src="./img/blue-villa-beautiful-sea-hotel.jpg" alt="">
+                    </div>
                 </div>
                 <div class="card">
                     <h2>This is Card 6.</h2>
                     <!-- <span></span> -->
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis eaque molestias quod ut voluptate.</p>
+                    <div class="imgdiv">
+                        <img class="card_img" src="./img/blue-villa-beautiful-sea-hotel.jpg" alt="">
+                    </div>
                 </div>
                 
             </div>
+        
+        <!-- This is poertfolio  -->
+        <section>
+            <div id="portfolio" style="background-color: red;">
+                 <!-- <div id="portD">
+                    
+                    <div id="text_div">
+                        <div id="user_name">
+                            Md Aquil
+                        </div>
+                        <p>Web practioner</p>
+                     </div>
+                     <div id="img_div">
+                        <img class="user_img" src="./img/user.jpg" alt="">
+                    </div>
+                 </div>
+                 <div id="icon_div" > 
+                    <div id="email">
+                        <i class="fa-solid fa-envelope" style="color: beige;"></i>
+                    </div>
+                    <div id="git">
+                        <i class="fa-brands fa-square-github" style="color: beige;"></i>
+                    </div>
+                    <div id="phone">
+                        <i class="fa-solid fa-phone" style="color: beige;"></i>
+                    </div>
+                 </div> -->
+                 
+
+            <!-- </div> -->
+        </section>
 
         <!-- This is footer Section. -->
-        <footer>
+        <!-- <footer>
             <div class="footer">
                 <p>All the right Reserved.</p>
                 <span>
@@ -198,7 +131,7 @@
                     <i class="fa-brands fa-github"></i>
                 </span>
               </div>
-        </footer>
+        </footer> -->
     </main>
 </body>
 </html>
