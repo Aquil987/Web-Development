@@ -47,7 +47,7 @@
     gap: 10px;
     /* color: bisque; */
 }
-.icon_div > span > i {
+i {
     color: azure;
     cursor: pointer;
 }
