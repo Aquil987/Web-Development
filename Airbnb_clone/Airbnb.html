@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airbnb clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #banner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 80px;
+        padding-right: 80px;
+        box-sizing: border-box;
+        background-color: #f7f7f7;
+      }
+
+      #left {
+        padding-top: 22px;
+        padding-bottom: 20px;
+        color: #222222;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      #right {
+        width: 18%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        color: #222222;
+      }
+
+      #banner_img {
+        width: 53px;
+        height: 30px;
+        border-radius: 7px;
+      }
+
+      #navbar {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 80px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      #logo {
+      }
+
+      #middle-section {
+        width: 25%;
+        border: 1px solid #dddddd;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 40px;
+      }
+
+      #right-section {
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      #search {
+        font-size: 15px;
+        color: white;
+        background-color: #ff385c;
+        padding: 5px;
+        border-radius: 50%;
+      }
+      #week {
+        border-left: 1px solid #dddddd;
+        border-right: 1px solid #dddddd;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      #acc {
+        border: 1px solid #dddddd;
+        border-radius: 15px;
+        padding: 10px;
+      }
+
+      #category {
+        display: flex;
+        padding-left: 80px;
+        padding-right: 80px;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      #category img {
+        height: 24px;
+        width: 24px;
+      }
+
+      #category > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #cards {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        padding-left: 80px;
+        padding-right: 80px;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      #cards > div {
+      }
+
+      #cards img {
+        width: 100%;
+      }
+
+      #star {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      img + #star ~ p {
+        margin-top: -10px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="left">Rooms and 50+ features</div>
+      <div id="right">
+        <img
+          id="banner_img"
+          src="https://a0.muscache.com/im/pictures/420c6e43-7896-4617-9ff4-ad05eb1f03f8.jpg?im_q=highq&im_w=240"
+          alt=""
+        />
+        <p>Play the Rooms film</p>
+        <p>Learn More</p>
+      </div>
+    </div>
+
+    <!-- Second section -->
+    <div id="navbar">
+      <div id="logo">
+        <img
+          height="64px"
+          width="118px"
+          src="https://1000logos.net/wp-content/uploads/2023/01/Airbnb-logo-768x432.png"
+          alt=""
+        />
+      </div>
+      <div id="middle-section">
+        <p>Anywhere</p>
+        <p id="week">Any week</p>
+        <p>Add guests</p>
+        <i id="search" class="fas fa-search search-icon"></i>
+      </div>
+      <div id="right-section">
+        <p>Airbnb your home</p>
+        <i class="fas fa-globe"></i>
+        <div id="acc">
+          <i class="fas fa-bars"></i>
+          <i class="far fa-user"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categories section -->
+    <div id="category">
+      <div>
+        <img
+          src="https://a0.muscache.com/pictures/7630c83f-96a8-4232-9a10-0398661e2e6f.jpg"
+          alt=""
+        />
+        <p>Rooms</p>
+      </div>
+      <div>
+        <img src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg" alt=""/>
+        <p>Cabins</p>
+      </div>
+      <div>
+        <img src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt="" >
+        <p>Farms</p>
+      </div>
+      <div>
+        
+        <img src="https://a0.muscache.com/pictures/4d4a4eba-c7e4-43eb-9ce2-95e1d200d10e.jpg" alt="" >
+        <p>Treehouses</p>
+      </div>
+      <div>
+        <img  src="https://a0.muscache.com/pictures/3271df99-f071-4ecf-9128-eb2d2b1f50f0.jpg" alt="" >
+        <p>Tiny Homes</p>
+      </div>
+      <div>
+        <img  src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg" alt="" >
+        <p>Beachfront</p>
+      </div>
+      <div>
+        <img  src="https://a0.muscache.com/pictures/ee9e2a40-ffac-4db9-9080-b351efc3cfc4.jpg" alt="" >
+        <p>Tropicals</p>
+      </div>
+      <div>
+        <img  src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt="" >
+        <p>Amazing View</p>
+      </div>
+      <div>
+        <img  src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg" alt="" >
+        <p>Lake Front</p>
+      </div>
+      <div>
+        <img  src="https://a0.muscache.com/pictures/a4634ca6-1407-4864-ab97-6e141967d782.jpg" alt="" >
+        <p>Lake</p>
+      </div>
+      <div>
+        <img  src="https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg" alt="" >
+        <p>Islands</p>
+      </div>
+      <div>
+        <img  src="https://a0.muscache.com/pictures/a6dd2bae-5fd0-4b28-b123-206783b5de1d.jpg" alt="" >
+        <p>Deserts</p>
+      </div>
+      <div>
+        <img  src="https://a0.muscache.com/pictures/4221e293-4770-4ea8-a4fa-9972158d4004.jpg" alt="" >
+        <p>Caves</p>
+      </div>
+      <div>
+        <img  src="https://a0.muscache.com/pictures/78ba8486-6ba6-4a43-a56d-f556189193da.jpg" alt="" >
+        <p>Mansions</p>
+      </div>
+      <div>
+        <img  src="https://a0.muscache.com/pictures/687a8682-68b3-4f21-8d71-3c3aef6c1110.jpg" alt="" >
+        <p>Boats</p>
+      </div>
+      <div>
+        <i id="greater" class="fas fa-chevron-circle-right"></i>
+      </div>
+      <div></div>
+    </div>
+
+    <div id="cards">
+      <div>
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-2694793/original/a6d39bc6-9564-4503-8b84-c796ecda03af.jpeg?im_w=720"
+          alt=""
+        />
+        <div id="star">
+          <p>Surry Hills, Australia</p>
+          <p>4.92</p>
+        </div>
+        <p>Stay with Bron. Business owner</p>
+        <p>26 Jul - 1 Aug</p>
+        <p>$61 night</p>
+      </div>
+      <div>
+        <img src="https://a0.muscache.com/im/pictures/f0ea4cba-c771-41b6-92c5-caa646edb513.jpg?im_w=1200" 
+        />
+        <div id="star">
+          <p>Jibhi, India</p>
+          <p>5.0</p>
+        </div>
+        <p>Whispering Pines Cottages| Tandi</p>
+        <p>10 Jul - 15 Jul</p>
+        <p>$87 night</p>
+      </div>
+      <div>
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-52329661/original/d431b2fb-ba8d-40c9-87a5-3f4308e66634.jpeg?im_w=720"
+          alt=""
+        />
+      
+        <div id="star">
+          <p>Siolim, India</p>
+          <p>4.5</p>
+        </div>
+        <p>Near seasonal lake</p>
+        <p>26 Nov - 30 Nov</p>
+        <p>$76 night</p>
+      </div>
+      <div>
+        <img
+          src="https://a0.muscache.com/im/pictures/d8ff9c1b-4882-47a6-ba30-56ff41a80d48.jpg?im_w=720"
+          alt=""
+        />
+        <div id="star">
+          <p>Cape yamu, Thailand</p>
+          <p>4.8</p>
+        </div>
+        <p>Luxury stay in Cape Yamu</p>
+        <p>9 Dec - 12 Dec</p>
+        <p>$61 night</p>
+      </div>
+      <div>
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-685846151445432693/original/684454a6-2bd6-4c5a-8839-01414bf0117a.jpeg?im_w=720"
+          alt=""
+        />
+        <div id="star">
+          <p>Ko Samui District, Thailand</p>
+          <p>4.3</p>
+        </div>
+        <p>luxurious beach boutique villa</p>
+        <p>16 Nov - 19 Nov</p>
+        <p>$81 night</p>
+      </div>
+      <div>
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-917282470605681869/original/5e5eff4b-5524-476a-bbaf-e8f33140ff17.jpeg?im_w=720"
+          alt=""
+        />
+        <div id="star">
+          <p>Bangkok, Thailand</p>
+          <p>4.9</p>
+        </div>
+        <p>Luxury stay in Bangkok</p>
+        <p>11 Nov - 13 Nov</p>
+        <p>$81 night</p>
+      </div>
+      <div>
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-853597984900485312/original/467470f8-7870-4e3b-bb5c-26fb1b28973a.jpeg?im_w=720"
+          alt=""
+        />
+        <div id="star">
+          <p>Marrakesh-Safi, Morocco</p>
+          <p>4.92</p>
+        </div>
+        <p>Luxury stay in Marrakesh</p>
+        <p>26 Dec - 30 Dec</p>
+        <p>$70 night</p>
+      </div>
+      <div>
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-738879331663769852/original/9ed8910e-45a3-41a3-8292-997d62784f53.jpeg?im_w=720"
+          alt=""
+        />
+        <div id="star">
+          <p>Meeru Island, Maldives</p>
+          <p>4.0</p>
+        </div>
+        <p>Romantic Overwater Chalet </p>
+        <p>26 Nov - 29 Nov</p>
+        <p>$60 night</p>
+      </div>
+      <div>
+        <img
+          src="https://a0.muscache.com/im/pictures/monet/Luxury-41232703/original/6572e163-647b-4a5c-a738-8bd3c044fc70?im_w=720"
+          alt=""
+        />
+        <div id="star">
+          <p>Kecamatan Mengwi, Indonesia</p>
+          <p>4.5</p>
+        </div>
+        <p>The River House</p>
+        <p>16 Nov - 18 Nov</p>
+        <p>$85 night</p>
+      </div>
+      <div>
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-9211435/original/019bca58-684f-4be8-a9d1-967c82cce73e.jpeg?im_w=720"
+          alt=""
+        />
+        <div id="star">
+          <p>Mirissa, Sri Lanka</p>
+          <p>4.86</p>
+        </div>
+        <p>Luxury Villa in Mirissa </p>
+        <p>18 Nov - 21 Nov</p>
+        <p>$80 night</p>
+      </div>
+    </div>
+  </body>
+</html>
