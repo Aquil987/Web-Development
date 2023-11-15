@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    header{
+        
+        display: flex;
+        justify-content: space-between;
+        padding: 13px 30px;
+    }
+    .logo{
+        font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    }
+    .contact{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    }
+    .icon{
+        background-color: yellow;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 169px;
+    }
+    .icon i{
+     cursor: pointer;
+    }
+    nav{
+        background-color: #49C7ED;
+        display: flex;
+        justify-content: center;
+        height: 60px;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+    }
+    ul li{
+
+    }
+    ul li{
+        list-style-type: none;
+        display: inline-block;
+        margin: 0px 20px;
+        font-size: 20px;
+        color: white;
+        font-family: sans-serif;
+    }
+    .banner-img{
+        width: 100% ;
+        height: 83vh;
+    }
+    #Banner{
+       
+        height: 100vh;
+        padding: 60px;
+
+    }
+    #upper-Banner{
+       
+        display: flex;
+        justify-content: center;
+        /* margin: 50px auto; */
+    }
+    .ban-te-logo{
+        width: 600px;
+        height: 300px;
+        font-family: sans-serif;
+        font-size: 65px;
+        /* background-color: #2555a7; */
+        
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        
+    }
+    .bannertext {
+    width: 600px;
+    height: 300px;
+   
+    }
+    
+    p{
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    color: rgba(128, 128, 128, 0.968);
+    }
+
+    #lower-banner{
+        /* height: 600px; */
+        /* /* width: 100%; */
+        display: flex;
+        justify-content: center;
+        /* margin: 50px auto; */
+    }
+    .ban-img > img{
+        width: 600px;
+    height: 300px;
+    }
+    #accordian {
+        width: 600px;
+    height: 300px;
+    background-color: #2555a7;
+    padding-left: 5px;
+    }
+    .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  
+}
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+#secure{
+    /* height: ;
+    background-color: #ccc; */
+}
+.card{
+    position: relative;
+}
+.card img{
+    width: 800px;
+    height: 350px;
+    
+}
+.img-text{
+    color: white;
+    position: absolute;
+    left: 150px;
+    top: 100px;
+}
+.card1{
+    width: 800px;
+    height: 350px;
+    background-color: gray;
+    text-align: center;
+}
+</style>
+<body>
+    <main>
+        <header>
+            <div class="logo">
+                Banking
+            </div>
+            <div class="contact">
+                <div class="phone">
+                    <span><i class="fa-solid fa-phone" style="color: #7db2f7;"></i></span>
+                    <span>+011 444 555 865</span>
+                </div>
+                <div class="email">
+                    <span><i class="fa-regular fa-envelope fa-1x" style="color: #7daef7;"></i></span>
+                    <span>abc@example.com</span>
+                </div>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-2x fa-facebook" style="color: #2555a7;"></i>
+                <i class="fa-brands  fa-2x fa-twitter" style="color: #1558cb;"></i>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Gallery</li>
+                <li>ShortCode</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <!-- Banner Section -->
+        <section>
+            
+                <img  class="banner-img" src="./img/male-ent.jpg" alt="xyz">
+           
+        </section>
+        <!-- Banner text -->
+        <section id="Banner">
+
+            <div id="upper-Banner" >
+                <div class="ban-te-logo">
+                    what makes <br> banking <br> unique?
+                </div>
+                <div class="bannertext">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nemo assumenda aspernatur eos architecto laudantium quia quidem ex quae neque? Libero praesentium perspiciatis, et veritatis saepe mollitia maxime molestias, magni, officiis fugiat pariatur adipisci veniam harum sint corporis. Soluta eius maiores velit nesciunt tempore quasi.</p><br><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quae dolore eveniet ad ab nihil culpa nostrum at, provident reiciendis repellendus tempora voluptatibus repudiandae. Dicta distinctio in, repellat fugiat vero accusamus optio blanditiis quod eum repudiandae obcaecati nobis labore, aperiam aspernatur ullam accusantium perferendis nisi.</p>
+                </div>
+            </div>
+            <div id="lower-banner">
+                <div class="ban-img">
+                    <img src="./img/paying.jpg" alt="pay">
+                </div>
+                <div id="accordian">
+                    <button class="accordion">Section 1</button>
+                    <div class="panel">
+                     <p>Lorem ipsum...</p>
+                     </div>
+
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                 <p>Lorem ipsum...</p>
+                </div>
+
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                  <p>Lorem ipsum...</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Security -->
+        <section id="secure">
+           <div class="uppercard" style="display: flex;">
+            <div class="card">
+                <img src="./img/smart-device-5222810_640.jpg" alt="">
+                <div class="img-text">
+                    <h1>Safe, secure and Convenient Banking.</h1><br>
+                    <p style="color: white; max-width: 350px ; font-family: sans-serif; font-size: 15px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, repudiandae.</p>
+                </div>
+            </div>
+            <div class="card1">
+                    <h1>It's your money, manage it own way.</h1><br>
+                    <p style="color: black; max-width: 350px ; font-family: sans-serif; font-size: 15px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, repudiandae.</p>
+                </div>
+           </div>
+         
+            
+          
+            
+        </section>
+    </main>
+</body>
+</html>

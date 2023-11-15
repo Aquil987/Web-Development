@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #Parent {
+        border: 2px solid black;
+        position: relative;
+        height: 10000px;
+    }
+    .div{
+        height: 100px;
+        width: 100px;
+    }
+    #green {
+        /* position: relative; */
+        top: 50px;
+        left: 100px;
+    }
+    #blue {
+        position: sticky;
+
+    }
+
+    #red {
+        position: fixed;
+        /* height: 500px; */
+    }
+    .box {
+        background-color: rebeccapurple;
+        height: 8000px;
+    }
+</style>
+<body>
+    <div id="Parent">
+        <div id="red" class="div" style="background-color: red; ">1</div>
+        <div id="green" class="div" style="background-color: green;">2</div>
+        <div  id="blue" class="div" style="background-color: blue">3</div>
+        <div  id="yellow" class="div" style="background-color: yellow">4</div>
+        <!-- <div  id="brown" class="div" style="background-color: brown">5</div> -->
+       </div>
+       <div class="box"></div>
+</body>
+</html>
