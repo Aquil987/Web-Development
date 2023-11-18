@@ -12,11 +12,16 @@
         padding: 0%;
         box-sizing: border-box;
     }
+
+    :root {
+        --blue-color: #369999;
+    }
     header{
         
         display: flex;
         justify-content: space-between;
         padding: 13px 30px;
+        flex-wrap: wrap;
     }
     .logo{
         font-family: sans-serif;
@@ -32,7 +37,7 @@
     font-size: 18px;
     }
     .icon{
-        background-color: yellow;
+        /* background-color: yellow; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -63,12 +68,14 @@
         font-family: sans-serif;
     }
     .banner-img{
-        width: 100% ;
-        height: 83vh;
+        background-image: url(./img/male-ent.jpg);
+        height: 300px;
+        height: 200px;
+        /* width: 100%; */
     }
     #Banner{
        
-        height: 100vh;
+        /* height: 100vh; */
         padding: 60px;
 
     }
@@ -133,7 +140,7 @@
   
 }
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: var(--primary-color);
 }
 .panel {
   padding: 0 18px;
@@ -159,11 +166,28 @@
     left: 150px;
     top: 100px;
 }
+
 .card1{
     width: 800px;
     height: 350px;
     background-color: gray;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .banner-img {
+    max-width: 100%;
+    height: auto;
+    background-image: cover;
+    }
 }
 </style>
 <body>
@@ -198,11 +222,9 @@
             </ul>
         </nav>
         <!-- Banner Section -->
-        <section>
-            
-                <img  class="banner-img" src="./img/male-ent.jpg" alt="xyz">
-           
-        </section>
+        <div class="banner-img">
+             
+        </div>
         <!-- Banner text -->
         <section id="Banner">
 
@@ -253,9 +275,6 @@
                     <p style="color: black; max-width: 350px ; font-family: sans-serif; font-size: 15px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, repudiandae.</p>
                 </div>
            </div>
-         
-            
-          
             
         </section>
     </main>
