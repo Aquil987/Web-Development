@@ -4,139 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-glasses</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<style>
-    :root{
-        --primary-color:#2C599D;
-        --font-family: sans-serif; 
-        --font-size: larger;
-    }
-    *{
-        margin: 0%;
-        padding: 0%;
-        box-sizing: border-box;
-    }
-    header{
-    height: 55px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    }
-    .logo{
-        font-size: var(--font-size);
-    }
-    ul{
-        display: flex;
 
-    }
-    ul li{
-    list-style-type: none;
-    margin: 0 25px;
-    }
-    ul li a{
-    
-    font-size: large;
-    text-decoration: none;
-    font-family: var(--font-family);
-    color: black;
-    
-
-    }
-    button{
-    background-color: var(--primary-color);
-    color: white;
-    font-size: var(--font-size);
-    padding: 5px;
-    border-radius: 8px;
-    cursor: pointer;
-    
-    }
-    .bannerImg{
-        /* background-image: url('./Images/about.jpg'); */
-        height: 600px;
-        width: 100%;
-    }
-    h1{
-        margin: 30px auto;
-        text-align: center;
-        /* margin: 25px auto; */
-        font-size: xx-large;
-        /* border-right-width: 2px; */
-        font-family: var(--font-family);
-        /* font-size: var(--font-size); */
-    }
-    .about-img{
-    width: 550px;
-    height: 350px;
-    border: 1px solid grey;
-    border-radius: 11px;
-    }
-    p{
-        text-align: justify;
-        max-width: 600px;
-        font-size: var(--font-size);
-        font-family: var(--font-family);
-    }
-    .About-containner{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .serviceConatiner{
-        background-color: #EBE5DE;
-    margin: 25px auto;
-    height: 1100px;
-    padding: 50px;
-    }
-    h2{
-        /* text-align: center; */
-        font-size: 35px;
-        font-family: var(--font-family);  
-        /* padding: 20px auto; */
-    }
-    /* .cardDiv{
-        display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    padding-left: 160px;
-    padding-right: 80px;
-    gap: 80px;
-    
-    margin-top: 50px;
-    } */
-    .cards{
-	    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 45px;
-    /* border: 2px solid black; */
-    border-radius: 10px;
-    height: 400px;
-    width: 300px;
-    cursor: pointer;
-    background-color: white;
-}
-.cards > img{
-    
-    margin: 20px 55px;
-    height: 85px;
-    width: 100px;
-}
-h3{
-    font-size: 28px;
-    color: var(--primary-color);
-    font-family: var(--font-family);
-    text-align: center;
-    margin: 10px auto;
-}
-.cards > p{
-    font-size: 16px;
-    font-family:var(--font-family) ;
-    text-align: justify;
-}
-.cards > button{
-    padding: 12px;
-    margin: 20px 40px;
-}
-</style>
 <body>
     <main>
         <header>
@@ -187,7 +58,7 @@ h3{
             gap: 80px;
             margin: 25px auto;">
                 <div class="cards">
-                    <img src="./Images/sunglasses.png" alt="">
+                    <img src="./Images/sun-glasses_8550278.png" alt="">
                     <h3>Sunglasses</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                     <button>Know More</button>
@@ -225,6 +96,133 @@ h3{
             </div>
             </div>
         </section>
+
+        <!-- Brand -->
+        <section>
+            <div style="width: 100%; height: 75px;  font-size: 35px; text-align: center; margin: 75px 0;">
+                Brands at our store
+            </div>
+            <div style=" display: flex;
+            justify-content: space-between;
+            margin: 0px 215px;
+            align-items: center;
+            margin-bottom: 100px;">
+                <div class="brandcard">
+                    <img src="./Images/b1.jpg" alt="">
+                    <h4>John Jacob</h4>
+                </div>
+                <div class="brandcard">
+                    <img src="./Images/b2.jpg" alt="">
+                    <h4>Vincent Chase</h4>
+                </div>
+                <div class="brandcard">
+                    <img src="./Images/b3.jpg" alt="">
+                    <h4>Vincent Chase</h4>
+                </div>
+                <div class="brandcard">
+                    <img src="./Images/b4.jpg" alt="">
+                    <h4>John Jacob</h4>
+                </div>
+                
+            </div>
+            <div class="exploreButton">
+                <button>Explore</button>
+            </div>
+        </section>
+
+        <!-- Diagnose -->
+        <section>
+            <div class="testParent">
+                <div class="leftTest">
+                    <h5>Book an Eye Test</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae omnis iusto iure inventore quia nihil placeat libero distinctio.</p>
+                    <button>Boon an Appointment</button>
+                </div>
+                <div class="rightTest">
+                    <img src="./Images/diag.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section>
+            <div style="height: 35px;
+            font-size: 35px;
+            text-align: left;
+            margin: 75px 222px;
+            border-left: 5px solid #FFCC43;
+            padding-left: 18px;">
+                Contact Us
+            </div>
+           <div class="ContactParent" style="display: flex; justify-content: space-around; align-items: center;">
+            <div class="ContactMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3865230.762408547!2d-134.0562892502271!3d61.76857921506743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53e0725a29397d7d%3A0x6c29eb06cf789f2d!2sDehcho%20Region%2C%20NT%2C%20Canada!5e0!3m2!1sen!2sin!4v1700462019658!5m2!1sen!2sin" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot fa-2x" style="color: #fafafa;"></i>
+                    
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-phone fa-2x" style="color: #fafafa;"></i>
+                    
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-envelope fa-2x" style="color: #fafafa;"></i>
+                    
+                </div>
+            </div>
+            <div class="contactForm">
+                <form >
+					<input type="text" placeholder=" Your Name"/>
+					<br>
+					<input type="email" placeholder="Your email"/>
+					<br>
+					<input type="number" placeholder="Your Mobile Number"/>
+					<br>
+					<textarea name="" id="" cols="30" rows="10"> Your Message</textarea>
+					<br>
+					<button>Send Message</button>
+					
+				</form>
+            </div>
+           </div>
+        </section>
+
+        <!-- Follow -->
+        <section>
+            <div class="follow">
+                <div style="height: 35px;
+                font-size: 35px;
+                text-align: center;
+                margin: 50px 222px;
+                border-right: 5px solid #FFCC43;
+                /* padding-left: 18px; */
+                ">
+                Follow Us
+                </div>
+                <div class="followIcon" style="display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 25px;">
+                    <span><i class="fa-brands fa-twitter fa-2x"></i></span>
+                    <span><i class="fa-brands fa-facebook fa-2x"></i></span>
+                    <span><i class="fa-brands fa-instagram fa-2x"></i></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer  -->
+        <footer>
+            <div>company All Rights Reserved</div>
+            <div>
+                
+                    <ul>
+                        <li> <a href="#">Home</a> </li>
+                        <li> <a href="#">About</a> </li>
+                        <li> <a href="#">Product </a> </li>
+                        <li> <a href="#">Service</a> </li>
+                        <li> <a href="#">ContactUs</a> </li>
+                      
+                    </ul>
+                
+            </div>
+        </footer>
     </main>
 </body>
 </html>
