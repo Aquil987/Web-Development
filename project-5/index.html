@@ -58,7 +58,7 @@
                 <div><img class="about-img" src="./Images/about.jpg" alt="about"></div>
                 <div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellat amet impedit reiciendis quidem voluptate. Quasi dolores, molestiae autem distinctio sequi iusto quos voluptatibus fugiat quibusdam temporibus debitis veritatis aliquam numquam, vitae optio tempore necessitatibus.</p>
-                    <button>Read More</button>
+                    <button id="readButton">Read More</button>
                 </div>
             </div>
         </section>
@@ -174,16 +174,29 @@
            <div class="ContactParent" style="display: flex; justify-content: space-around; align-items: center;">
             <div class="ContactMap">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3865230.762408547!2d-134.0562892502271!3d61.76857921506743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53e0725a29397d7d%3A0x6c29eb06cf789f2d!2sDehcho%20Region%2C%20NT%2C%20Canada!5e0!3m2!1sen!2sin!4v1700462019658!5m2!1sen!2sin" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="icon">
-                    <i class="fa-solid fa-location-dot fa-2x" style="color: #fafafa;"></i>
+                <div class="iconParent" >
+                    <div class="icon">
+                        <i class="fa-solid fa-location-dot fa-2x" style="color: #fafafa;"></i>
+                    </div>
+                    <div class="icon-text">Address <br> USA
+
+                    </div>
                     
                 </div>
-                <div class="icon">
-                    <i class="fa-solid fa-phone fa-2x" style="color: #fafafa;"></i>
+                <div class="iconParent">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone fa-2x" style="color: #fafafa;"></i>
+                    </div>
+                    <div class="icon-text">Phone <br> +120 11112222</div>
+                   
                     
                 </div>
-                <div class="icon">
-                    <i class="fa-solid fa-envelope fa-2x" style="color: #fafafa;"></i>
+                <div class="iconParent">
+                   
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope fa-2x" style="color: #fafafa;"></i>
+                    </div>
+                    <div class="icon-text">Email <br> abc@text.com</div>
                     
                 </div>
             </div>
@@ -227,26 +240,21 @@
         <!-- Footer  -->
         <footer>
             <div>company All Rights Reserved</div>
-            <div>
+            <div id="footerNav">
                 
                     <ul>
-                        <li> <a href="#">Home</a> </li>
-                        <li> <a href="#">About</a> </li>
-                        <li> <a href="#">Product </a> </li>
-                        <li> <a href="#">Service</a> </li>
-                        <li> <a href="#">ContactUs</a> </li>
+                        <li> Home </li>
+                        <li> About </li>
+                        <li> Product </li>
+                        <li> Service </li>
+                        <li> ContactUs </li>
                       
                     </ul>
                 
             </div>
         </footer>
 
-        <!-- blur effect -->
-        <section>
-           
-
-            </div>
-        </section>
+       
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
