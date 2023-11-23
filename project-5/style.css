@@ -46,13 +46,16 @@
     padding: 5px;
     border-radius: 8px;
     cursor: pointer;
-    border: none;    
+    border: none;   
+    /* display: none;  */
     }
+
     .bannerImg{
         /* background-image: url('./Images/about.jpg'); */
         height: 600px;
         width: 100%;
     }
+
     h1{
         margin: 30px auto;
         text-align: center;
@@ -134,26 +137,47 @@ h3{
     margin: 20px 40px;
     border: none;
 }
+
+/* 
+.brandcard_parent {
+           display: flex;
+            justify-content: space-between;
+            margin: 0px 215px;
+            align-items: center;
+            margin-bottom: 100px;
+            width: 100%;
+} */
+
 .brandcard {
     height: 185px;
     width: 225px;
     padding: 16px;
-    border-radius: 11px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
 }
+
 .brandcard > img{
     height: 125px;
     width: 175px;
+    margin: 0 300px;
+    border-radius: 11px;
 }
 .brandcard > h4 {
     text-align: center;font-size: 20px;
     font-family: var(--font-family);
 }
+
+.swiper {
+    width: 800px;
+    height: 200px;
+    border-radius: 11px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 .exploreButton{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin: 50px auto;
+
     /*  */
 }
 .exploreButton > button{
@@ -267,4 +291,33 @@ footer{
 }
 footer > ul > li >{
 color: white;
+}
+
+
+
+#myForm {
+    display: none;
+}
+
+.form-container{
+    padding: 35px;
+    /* margin: 0 489px; */
+    border-radius: 11px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+    top: 75px;
+    right: 20px;
+    /* opacity: 75%; */
+    /* background: o; */
+   
+}
+
+.form-container > input{
+    width: 460px;
+    padding: 26px;
+}
+
+#blur{
+    filter: blur(1px);
 }

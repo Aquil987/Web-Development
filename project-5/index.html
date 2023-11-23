@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-glasses</title>
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
     <main>
+        <div id="blur"></div>
         <header>
             <div class="logo">
                 Logo
@@ -17,25 +19,40 @@
             <nav>
                 <ul>
                     <li> <a href="#">Home</a> </li>
-                    <li> <a href="#">About</a> </li>
-                    <li> <a href="#">Product </a> </li>
-                    <li> <a href="#">Service</a> </li>
-                    <li> <a href="#">ContactUs</a> </li>
+                    <li> <a href="#AboutUsID">About</a> </li>
+                    <li> <a href="#ProductId">Product </a> </li>
+                    <li> <a href="#serviceConatinerID">Service</a> </li>
+                    <li> <a href="#ContactformID">ContactUs</a> </li>
                   
                 </ul>
             </nav>
             <div class="appointment">
-                <button>Book Appointment</button>
+                <button  onclick="openForm()">Book Appointment</button>
             </div>
         </header>
 
         <!-- Banner Section -->
         <section>
             <img class="bannerImg" src="./Images/banner.jpg">
+            <!-- pop up form -->
+            <div class="form-popup" id="myForm">
+            <form class="form-container">
+              <h1>Book Appointment</h1>
+          
+              <!-- <label for="email"><b>Email</b></label> -->
+              <input type="text" placeholder="Enter Email" name="email" required><br>
+          
+              <!-- <label for="psw"><b>Password</b></label> -->
+              <input type="password" placeholder="Enter Password" name="psw" required><br>
+          
+              <button type="button" class="btn">Submit</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+            </form>
+          </div>
         </section>
 
         <!-- About Us -->
-        <section>
+        <section id="AboutUsID">
             <h1>About Us</h1>
             <div class="About-containner">
                 <div><img class="about-img" src="./Images/about.jpg" alt="about"></div>
@@ -45,10 +62,12 @@
                 </div>
             </div>
         </section>
+        
+        
 
         <!-- Services -->
         <section >
-            <div class="serviceConatiner">
+            <div class="serviceConatiner" id="serviceConatinerID">
                 <div style="display: flex; justify-content: center; align-items: start;  height: 75px;"><h2>Our Services</h2></div>
             <div class="cardDiv" style="  display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -98,33 +117,31 @@
         </section>
 
         <!-- Brand -->
-        <section>
-            <div style="width: 100%; height: 75px;  font-size: 35px; text-align: center; margin: 75px 0;">
+        <section id="ProductId">
+            <h1>
                 Brands at our store
-            </div>
-            <div style=" display: flex;
-            justify-content: space-between;
-            margin: 0px 215px;
-            align-items: center;
-            margin-bottom: 100px;">
-                <div class="brandcard">
-                    <img src="./Images/b1.jpg" alt="">
+            </h1>
+            <div class="swiper" >
+            <div class="swiper-wrapper brandcard_parent ">
+                <div class="swiper-slide brandcard  ">
+                    <img src="./Images/b1.jpg " alt="">
                     <h4>John Jacob</h4>
                 </div>
-                <div class="brandcard">
-                    <img src="./Images/b2.jpg" alt="">
+                <div class="swiper-slide brandcard ">
+                    <img src="./Images/b2.jpg " alt="">
                     <h4>Vincent Chase</h4>
                 </div>
-                <div class="brandcard">
-                    <img src="./Images/b3.jpg" alt="">
+                <div class="swiper-slide brandcard  ">
+                    <img src="./Images/b3.jpg " alt="">
                     <h4>Vincent Chase</h4>
                 </div>
-                <div class="brandcard">
-                    <img src="./Images/b4.jpg" alt="">
+                <div class="swiper-slide brandcard  ">
+                    <img src="./Images/b4.jpg " alt="">
                     <h4>John Jacob</h4>
                 </div>
                 
             </div>
+        </div>
             <div class="exploreButton">
                 <button>Explore</button>
             </div>
@@ -170,7 +187,7 @@
                     
                 </div>
             </div>
-            <div class="contactForm">
+            <div class="contactForm" id="ContactformID">
                 <form >
 					<input type="text" placeholder=" Your Name"/>
 					<br>
@@ -223,6 +240,16 @@
                 
             </div>
         </footer>
+
+        <!-- blur effect -->
+        <section>
+           
+
+            </div>
+        </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
