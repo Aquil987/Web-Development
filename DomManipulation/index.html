@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Handler</title>
+</head>
+<style>
+    main{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #red{
+        background-color: red;
+    }
+    #yellow{
+        background-color: yellow;
+    }
+    #blue{
+        background-color: blue;
+    }
+    #green{
+        background-color: green;
+    }
+    .button {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <main>
+        <Div class="button" id="red"></Div>
+        <Div class="button" id="yellow"></Div>
+        <Div class="button" id="blue"></Div>
+        <Div class="button" Id="green"></Div>
+    </main>
+
+</body>
+<script>
+
+    const btn = document.querySelectorAll('.button');
+    console.log(btn);
+    const body = document.querySelector('body');
+     
+    btn.forEach((button) => { //here button is variable to iterate one by one.
+        button.addEventListener('click', function(e) {
+            console.log('click');
+          if(e.target.id === 'red')
+            body.style.backgroundColor = 'red';
+        
+          if(e.target.id === 'yellow')            
+            body.style.backgroundColor = 'yellow';
+          
+          if(e.target.id === 'blue')            
+            body.style.backgroundColor = 'blue';
+          
+          if(e.target.id === 'green')         
+            body.style.backgroundColor = 'green';
+          
+
+        })
+    })
+
+
+
+
+
+
+
+    // let redHandler=document.querySelector('#Red');
+    // redHandler.addEventListener("click",function(){
+    //     document.body.style.backgroundColor="red";
+    // })
+    // let yellowHandler=document.querySelector('#Yellow');
+    // yellowHandler.addEventListener("click",function(){
+    //     document.body.style.backgroundColor="Yellow";
+    // })
+    // let blueHandler=document.querySelector('#Blue');
+    // blueHandler.addEventListener("click",function(){
+    //     document.body.style.backgroundColor="Blue";
+    // })
+    // let greenHandler=document.querySelector('#Green');
+    // greenHandler.addEventListener("click",function(){
+    //     document.body.style.backgroundColor="Green";
+    // })
+</script>
+</html>
