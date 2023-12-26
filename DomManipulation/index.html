@@ -44,8 +44,8 @@
     console.log(btn);
     const body = document.querySelector('body');
      
-    btn.forEach((button) => { //here button is variable to iterate one by one.
-        button.addEventListener('click', function(e) {
+    btn.forEach((mybtn) => { //here button is variable to iterate one by one.
+        mybtn.addEventListener('click', function(e) {
             console.log('click');
           if(e.target.id === 'red')
             body.style.backgroundColor = 'red';
@@ -66,7 +66,16 @@
 
 
 
+     let username = 'chkjhjkhj';
 
+     String.prototype.big = function () {
+        console.log(`${username}`);
+        console.log(`${this}`);
+        console.log(`uppercase is ${this.toUpperCase()}`);
+     }
+     
+     "coffee".big();
+     "mango".big();
 
 
     // let redHandler=document.querySelector('#Red');

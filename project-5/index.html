@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-16">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-glasses</title>
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -27,13 +27,13 @@
                 </ul>
             </nav>
             <div class="appointment">
-                <button  onclick="openForm()">Book Appointment</button>
+                <button id="mybtn">Book Appointment</button>
             </div>
         </header>
 
         <!-- Banner Section -->
         <section>
-            <img class="bannerImg" src="./Images/banner.jpg">
+            <img class="bannerImg" src="./Images/Rectangle 5.png">
             <!-- pop up form -->
             <div class="form-popup" id="myForm">
             <form class="form-container">
@@ -46,7 +46,7 @@
               <input type="password" placeholder="Enter Password" name="psw" required><br>
           
               <button type="button" class="btn">Submit</button>
-              <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+              <button type="button" class="btn cancel" id="clsbtn">Cancel</button>
             </form>
           </div>
         </section>
@@ -201,8 +201,8 @@
                 </div>
             </div>
             <div class="contactForm" id="ContactformID">
-                <form >
-					<input type="text" placeholder=" Your Name"/>
+                <form>
+					<input type="text" placeholder=" Your Name" id="name"/>
 					<br>
 					<input type="email" placeholder="Your email"/>
 					<br>
@@ -257,6 +257,8 @@
        
     </main>
 
+    <form action="index.php" method="POST" enctype="multipart/form-data" accept-charset="utf-8">
+    </form>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>

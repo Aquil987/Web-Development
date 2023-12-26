@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+</head>
+<style>
+    .error {
+        color: red;
+    }
+</style>
+<body>
+    <form action="" onsubmit="return validateForm();">
+        <label for="username">username</label>
+        <input type="text" name="" id="username">
+        <p id="userError" class="error"></p>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="" id="password">
+        <p id="passError" class="error"></p>
+        <br>
+        <button type="submit">submit</button>
+        <!-- <button>Cancel</button> -->
+    </form>
+    <script>
+        let username = document.querySelector("#username");
+        let password = document.querySelector("#password");
+        let flag = '';
+
+
+        function validateForm(){
+            if(username.value===""){
+              document.getElementById('userError').innerHTML="Enter valid Email.";
+              flag = 0;
+            }
+
+            else if(username.value.length<3)
+            {
+                document.getElementById('userError').innerHTML="Enter atleast 4 value.";
+              flag = 0;   
+            }
+
+            else {
+                document.getElementById('userError').innerHTML="";
+                flag=1;
+            }
+
+               if(password.value==="")
+               { 
+                document.getElementById('passError').innerHTML="Enter valid Password.";
+                    flag=0;
+               } 
+               else{
+                document.getElementById('passError').innerHTML="";
+                flag=1;
+               }
+
+               if(flag)
+                return true;
+               else 
+               return false;
+        }
+    </script>
+</body>
+</html>

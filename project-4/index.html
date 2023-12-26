@@ -5,191 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banking</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./banking.css">
 </head>
-<style>
-    *{
-        margin: 0%;
-        padding: 0%;
-        box-sizing: border-box;
-    }
 
-    :root {
-        --blue-color: #369999;
-    }
-    header{
-        
-        display: flex;
-        justify-content: space-between;
-        padding: 13px 30px;
-        flex-wrap: wrap;
-    }
-    .logo{
-        font-family: sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    }
-    .contact{
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    font-size: 18px;
-    }
-    .icon{
-        /* background-color: yellow; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 169px;
-    }
-    .icon i{
-     cursor: pointer;
-    }
-    nav{
-        background-color: #49C7ED;
-        display: flex;
-        justify-content: center;
-        height: 60px;
-    }
-    ul{
-        display: flex;
-        align-items: center;
-    }
-    ul li{
-
-    }
-    ul li{
-        list-style-type: none;
-        display: inline-block;
-        margin: 0px 20px;
-        font-size: 20px;
-        color: white;
-        font-family: sans-serif;
-    }
-    .banner-img{
-        background-image: url(./img/male-ent.jpg);
-        height: 300px;
-        height: 200px;
-        /* width: 100%; */
-    }
-    #Banner{
-       
-        /* height: 100vh; */
-        padding: 60px;
-
-    }
-    #upper-Banner{
-       
-        display: flex;
-        justify-content: center;
-        /* margin: 50px auto; */
-    }
-    .ban-te-logo{
-        width: 600px;
-        height: 300px;
-        font-family: sans-serif;
-        font-size: 65px;
-        /* background-color: #2555a7; */
-        
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        
-    }
-    .bannertext {
-    width: 600px;
-    height: 300px;
-   
-    }
-    
-    p{
-    font-family: sans-serif;
-    font-size: 18px;
-    text-align: justify;
-    color: rgba(128, 128, 128, 0.968);
-    }
-
-    #lower-banner{
-        /* height: 600px; */
-        /* /* width: 100%; */
-        display: flex;
-        justify-content: center;
-        /* margin: 50px auto; */
-    }
-    .ban-img > img{
-        width: 600px;
-    height: 300px;
-    }
-    #accordian {
-        width: 600px;
-    height: 300px;
-    background-color: #2555a7;
-    padding-left: 5px;
-    }
-    .accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-  
-}
-.active, .accordion:hover {
-  background-color: var(--primary-color);
-}
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-}
-#secure{
-    /* height: ;
-    background-color: #ccc; */
-}
-.card{
-    position: relative;
-}
-.card img{
-    width: 800px;
-    height: 350px;
-    
-}
-.img-text{
-    color: white;
-    position: absolute;
-    left: 150px;
-    top: 100px;
-}
-
-.card1{
-    width: 800px;
-    height: 350px;
-    background-color: gray;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    header {
-        display: flex;
-        flex-direction: column;
-    }
-    nav {
-        display: flex;
-        justify-content: flex-start;
-    }
-    .banner-img {
-    max-width: 100%;
-    height: auto;
-    background-image: cover;
-    }
-}
-</style>
 <body>
     <main>
         <header>
@@ -222,9 +40,20 @@
             </ul>
         </nav>
         <!-- Banner Section -->
-        <div class="banner-img">
-             
-        </div>
+        <section style="background-image: url(./img/male-ent.jpg); height: 600px; padding: 80px 100px;">
+            <div class="banner-img" id="bannerBox">
+                <h2>
+                    Welcome to E-Banking.
+                </h2>
+                <hr>
+                <h1>
+                    Safe, secure and Convenient Banking.
+    
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, unde fugit cum molestias vitae suscipit quis eius quos facilis doloremque temporibus autem ex atque sapiente quae labore veniam quidem consequuntur ab. </p>
+                 
+            </div>
+        </section>
         <!-- Banner text -->
         <section id="Banner">
 
@@ -261,21 +90,38 @@
             </div>
         </section>
         <!-- Security -->
-        <section id="secure">
-           <div class="uppercard" style="display: flex;">
+        <section id="secure" style="position: relative;">
+           <div class="securecard" style="display: flex; justify-content: center;">
             <div class="card">
-                <img src="./img/smart-device-5222810_640.jpg" alt="">
-                <div class="img-text">
+                    <div class="cardtext">
                     <h1>Safe, secure and Convenient Banking.</h1><br>
                     <p style="color: white; max-width: 350px ; font-family: sans-serif; font-size: 15px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, repudiandae.</p>
                 </div>
             </div>
             <div class="card1">
+                    <div class="cardtext">
                     <h1>It's your money, manage it own way.</h1><br>
-                    <p style="color: black; max-width: 350px ; font-family: sans-serif; font-size: 15px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, repudiandae.</p>
+                    <p style="color: white; max-width: 350px ; font-family: sans-serif; font-size: 15px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, repudiandae.</p>
+                    </div>
                 </div>
            </div>
-            
+           <div class="securecard" style="display: flex; justify-content: center;">
+            <div class="card1">
+                <div class="cardtext">
+                <h1>It's your money, manage it own way.</h1><br>
+                <p style="color: white; max-width: 350px ; font-family: sans-serif; font-size: 15px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, repudiandae.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardtext">
+                <h1>Safe, secure and Convenient Banking.</h1><br>
+                <p style="color: white; max-width: 350px ; font-family: sans-serif; font-size: 15px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, repudiandae.</p>
+            </div>
+        </div>
+        </div> 
+        <div class="bottomcard" >
+            secure banking
+        </div>
         </section>
     </main>
 </body>

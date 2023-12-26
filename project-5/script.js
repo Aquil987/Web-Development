@@ -24,12 +24,35 @@ const swiper = new Swiper('.swiper', {
   });
 
 
-  function openForm() {
-    console.log("hiii");
-    document.getElementById('myForm').style.display = "block";
-    document.getElementById('blur').style.body.backgroundColor= "red";
-  }
+  // function openForm() {
+  //   // console.log("hiii");
+  //   document.getElementById('myForm').style.display = "block";
+  //   let blur = document.querySelector('#blur').style.display ="block";
+  //   console.log(blur);
+  // }
 
-  function closeForm() {
+  // function closeForm() {
+  //   document.getElementById('myForm').style.display = "none";
+  //   document.getElementById('blur').style.display ="none";
+  // }
+
+
+
+   let openform =  document.getElementById('mybtn');
+  //  console.log(form);
+    openform.addEventListener('click', function(){
+      document.getElementById('myForm').style.display = "block";
+      document.querySelector('#blur').style.display ="block";    
+    })
+  
+ 
+let closeform =document.getElementById('clsbtn');
+   closeform.addEventListener('click',function(){
     document.getElementById('myForm').style.display = "none";
-  }
+    document.getElementById('blur').style.display ="none";
+   }
+   )
+
+
+
+   
